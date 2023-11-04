@@ -8,8 +8,6 @@ const session = require('express-session');
 
 const app = express();
 
-require('dotenv').config();
-
 passport.use(new GoogleStrategy({
   clientID: process.env.clientID,
   clientSecret: process.env.clientSecret,
